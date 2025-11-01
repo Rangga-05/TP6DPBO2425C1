@@ -26,31 +26,31 @@ Program terdiri dari 3 bagian utama, yaitu:
 
 ## Penjelasan Class
 Dalam program ini terdapat 7 class, yaitu:
-1. **Class 'App'**, class ini berisi fungsi main yang merupakan bagian utama dari game untuk memulai game.
-2. **Class 'Logic'**, class ini mengatur seluruh logika game seperti pergerakan burung, pipa, skor, tabrakan, dan kondisi game over.
-3. **Class 'MainMenu'**, class ini menampilkan menu utama sebelum game dimulai, berisi tombol Main untuk memulai game dan Keluar untuk menghentikan game.
-4. **Class 'Pipe'**, class ini merepresentasikan objek pipa sebagai rintangan dalam game, dengan posisi, ukuran, dan gambar pipa.
-5. **Class 'Player'**, class ini merepresentasikan burung sebagai karakter utama yang dapat terbang dengan tombol spasi.
-6. **Class 'Sound'**, class ini mengatur semua suara di game seperti backsound, suara lompat, tabrakan, dan game over.
-7. **Class 'View'**, class ini menampilkan tampilan game ke layar seperti background, burung, pipa, skor, dan teks saat game over.
+1. **Class `App`**, class ini berisi fungsi main yang merupakan bagian utama dari game untuk memulai game.
+2. **Class `Logic`**, class ini mengatur seluruh logika game seperti pergerakan burung, pipa, skor, tabrakan, dan kondisi game over.
+3. **Class `MainMenu`**, class ini menampilkan menu utama sebelum game dimulai, berisi tombol Main untuk memulai game dan Keluar untuk menghentikan game.
+4. **Class `Pipe`**, class ini merepresentasikan objek pipa sebagai rintangan dalam game, dengan posisi, ukuran, dan gambar pipa.
+5. **Class `Player`**, class ini merepresentasikan burung sebagai karakter utama yang dapat terbang dengan tombol spasi.
+6. **Class `Sound`**, class ini mengatur semua suara di game seperti backsound, suara lompat, tabrakan, dan game over.
+7. **Class `View`**, class ini menampilkan tampilan game ke layar seperti background, burung, pipa, skor, dan teks saat game over.
 
 ## Alur Program
-1. Program dimulai dari **class 'MainMenu'**
+1. Program dimulai dari **class `MainMenu`**
    - Saat dijalankan, program pertama kali menampilkan menu utama berisi tombol Main dan Keluar.
-   - Jika pemain menekan tombol Main, maka game akan dimulai dengan memanggil class 'App'.
+   - Jika pemain menekan tombol Main, maka game akan dimulai dengan memanggil class `App`.
    - Jika menekan tombol Keluar, program akan langsung ditutup.
-2. Masuk ke **class 'App'**
-   - Class ini menjalankan game utama dengan membuat jendela (window) dan memanggil class     'Logic' serta 'View' untuk mengatur jalannya permainan dan tampilannya.
-3. **Class 'Logic'** mulai berjalan
+2. Masuk ke **class `App`**
+   - Class ini menjalankan game utama dengan membuat jendela (window) dan memanggil class `Logic` serta `View` untuk mengatur jalannya permainan dan tampilannya.
+3. **Class `Logic`** mulai berjalan
    - Bagian ini mengatur semua logika permainan:
      - Posisi burung (player),
      - Pergerakan pipa (pipe),
      - Gravitasi, skor, dan kondisi game over.
    - Musik latar belakang juga mulai diputar lewat class 'Sound'.
    - Pipa baru akan muncul setiap beberapa detik secara otomatis.
-4. **Class 'View'** menggambar tampilan game
+4. **Class `View`** menggambar tampilan game
    - Menampilkan latar belakang, burung, pipa, dan skor ke layar.
-   - Jika pemain kalah, akan muncul tulisan "GAME OVER", serta instruksi untuk menekan **R** (mengulang permainan) atau M (Main Menu).
+   - Jika pemain kalah, akan muncul tulisan "GAME OVER", serta instruksi untuk menekan **R** (mengulang permainan) atau **M** (Main Menu).
 5. Kontrol Permainan
    - Tekan **Spasi** -> burung terbang keatas / lompat.
    - Tekan **R** -> game di reset dan memulai ulang game.
@@ -58,9 +58,9 @@ Dalam program ini terdapat 7 class, yaitu:
 6. **Class 'Sound'** mengatur suara
    - Memainkan musik latar (backsound), suara lompat, tabrakan, dan game over.
    - Musik berhenti ketika pemain kalah, dan bisa dilanjutkan lagi saat restart atau mengulang permainan.
-7. **Class 'Pipe' dan 'Player'**
-   - 'Pipe' menyimpan posisi, ukuran, dan gambar dari pipa yang bergerak.
-   - 'Player' menyimpan posisi, kecepatan, dan gambar burung yang dikendalikan pemain.
+7. **Class `Pipe` dan `Player`**
+   - `Pipe` menyimpan posisi, ukuran, dan gambar dari pipa yang bergerak.
+   - `Player` menyimpan posisi, kecepatan, dan gambar burung yang dikendalikan pemain.
 8. Permaian berulang sampai pemain keluar
    - Selama tidak game over, permainan terus berjalan dengan pipa baru dan skor bertambah.
    - Jika kalah, pemain bisa restart (mengulang permainan) atau kembali ke Main Menu.
