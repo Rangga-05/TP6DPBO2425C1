@@ -55,7 +55,7 @@ Dalam program ini terdapat 7 class, yaitu:
    - Tekan **Spasi** -> burung terbang keatas / lompat.
    - Tekan **R** -> game di reset dan memulai ulang game.
    - Tekan **M** -> kembali ke Main Menu.
-6. **Class 'Sound'** mengatur suara
+6. **Class `Sound`** mengatur suara
    - Memainkan musik latar (backsound), suara lompat, tabrakan, dan game over.
    - Musik berhenti ketika pemain kalah, dan bisa dilanjutkan lagi saat restart atau mengulang permainan.
 7. **Class `Pipe` dan `Player`**
